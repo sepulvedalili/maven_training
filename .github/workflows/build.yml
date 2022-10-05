@@ -19,7 +19,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
       - run: |
-         java -version
-         echo $JAVA_HOME
+        java -version
+        echo $JAVA_HOME
       - run: ./mvnw install
       - uses: codecov/codecov-action@v1
